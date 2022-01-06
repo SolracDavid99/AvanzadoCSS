@@ -22,14 +22,14 @@ h3{
 
 @keyframes rojo-azul {
     0% {background-color: red;}
-    50% {background-color: blue;}
-    100% {background-color: red;}
+    100% {background-color: blue;}
+    /* 100% {background-color: red;} */
 }
 
 @keyframes azul-rojo {
     0% {background-color: blue;}
-    50% {background-color: red;}
-    100% {background-color: blue;}
+    100% {background-color: red;}
+    /* 100% {background-color: blue;} */
 }
 
 #div1{
@@ -41,8 +41,9 @@ h3{
     border: solid black 1px;
     transform: rotate(90deg);
     animation-name: azul-rojo;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #div2{
@@ -54,6 +55,7 @@ h3{
     border: solid black 1px;
     transform: rotate(90deg);
     animation-name: rojo-azul;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
